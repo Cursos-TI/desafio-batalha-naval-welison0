@@ -11,15 +11,26 @@ int main() {
         }
     }
 
-    //navio (3) linha 3, coluna e,f,g.
+    //navio 1- linha 3, coluna e,f,g.
     for(int j = 4; j <= 6; j++){
         tabuleiro[2][j] = 3;
     }
 
-    //navio coluna H, linha 6,7,8.
+    //navio 2- coluna H, linha 6,7,8.
     for(int i = 5; i <= 7; i++){
         tabuleiro[i][7] = 3;
     }
+     //navio 3, diagonal
+    for(int k = 0; k < 4; k++){
+        tabuleiro[4+k][3+k] = 3;
+    }
+
+    //navio 4, diagonal
+    for(int k = 0; k < 3; k++){
+        tabuleiro[1+k][1+k] = 3;
+    }
+     
+    printf("\n");
 
     // 2. Exibir tabuleiro
     printf(" TABULEIRO BATALHA NAVAL \n");
